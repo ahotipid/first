@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-    //when frosting selected, the cake bg img change
+    //when frosting selected, the cake background img change
     //add class for backgrond image depends on selected frosting
     $('fieldset.frosting').on('click', 'label', function() {
         //create variable for select and unselected classes

@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build-A-Cake</title>
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Mulish&family=Sacramento&display=swap" rel="stylesheet"> 
-    <script src='https://code.jquery.com/jquery-3.2.1.min.js' ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Mulish&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
 </head>
+
 <body>
     <header>
         <h1 class="wrapper">cake creations</h1>
@@ -21,87 +24,105 @@
                 <label for="name">Your Name</label>
                 <input type="text" id="name" name="name" placeholder="Name">
                 <div class="selections">
-                <fieldset class="cakeSize">
-                    <legend>Size</br>select 1 </legend>
-                    <label for="6inches"><input type="radio" value="1" name="size" id="6inches">6 inches</label>
-                    
-                    <label for="8inches"><input type="radio" value="1.5" name="size" id="8inches">8 inches</label>
-                    
-                    <label for="10inches"><input type="radio" value="2.5" name="size" id="10inches">10 inches</label>
-                    
-                    <label for="12inches"> <input type="radio" value="3" name="size" id="12inches">12 inches</label>
-                   
-                </fieldset>
+                    <fieldset class="cakeSize">
+                        <legend>Size</br>select 1 </legend>
+                        <label for="6inches"><input type="radio" value="1" name="size" id="6inches">6 inches</label>
 
-                <fieldset class="cakeBase">
-                    <legend>Cake base</br>select 1</legend>
+                        <label for="8inches"><input type="radio" value="1.5" name="size" id="8inches">8 inches</label>
 
-                    <label for="vanilla"><input type="radio" value="5" name="base" id="vanilla">Vanilla</label>
-                    
-                    <label for="chocolate"><input type="radio" value="7" name="base" id="chocolate">Chocolate</label>
-                    
-                    <label for="redVelvet"><input type="radio" value="7" name="base" id="redVelvet">Red Velvet</label>
-                    
-                    <label for="lemon"><input type="radio" value="6" name="base" id="lemon">Lemon</label>
-                    
-                    <label for="birthdayCake"><input type="radio" value="7" name="base" id="birthdayCake">Birthday Cake</label>
-                    
-                </fieldset>
+                        <label for="10inches"><input type="radio" value="2.5" name="size" id="10inches">10
+                            inches</label>
 
-                <fieldset class="frosting">
-                    <legend>Frosting</br>select 1</legend>
+                        <label for="12inches"> <input type="radio" value="3" name="size" id="12inches">12 inches</label>
 
-                    <label for="vanillaButter"><input type="radio" value="4" name="frosting" id="vanillaButter">Vanilla Buttercream</label>
-                    
-                    <label for="chocGana"><input type="radio" value="6" name="frosting" id="chocGana">Chocolate Ganache</label>
-                    
-                    <label for="strawberryButter"><input type="radio" value="5" name="frosting" id="strawberryButter">Strawberry Buttercream</label>
-                    
-                    <label for="creamcheese"><input type="radio" value="6" name="frosting" id="creamcheese">Creamcheese</label>
-                    
-                    <label for="lemonMer"><input type="radio" value="5" name="frosting" id="lemonMer">Lemon Meringue</label>
-                    
-                    <label for="banana"><input type="radio" value="4" name="frosting" id="banana">Banana Cream</label>
-                    
-                </fieldset>
+                    </fieldset>
 
-                <fieldset class="topDeco">
-                    <legend>Toppings & Decorations</br>select up to 3</legend>
+                    <fieldset class="cakeBase">
+                        <legend>Cake base</br>select 1</legend>
 
-                    <label for="freshBerries"><input type="checkbox" value="3" name="topping" id="freshBerries">Fresh Berries</label>
-                    
-                    <label for="candiedLemon"><input type="checkbox" value="2" name="topping" id="candiedLemon">Candied Lemon</label>
-                    
-                    <label for="darkChocShave"><input type="checkbox" value="3" name="topping" id="darkChocShave">Dark Chocolate Shavings</label>
-                    
-                    <label for="candiedHazel"><input type="checkbox" value="4" name="topping" id="candiedHazel">Candied Hazelnuts</label>
-                    
-                    <label for="rainbowSprinkles"><input type="checkbox" value="2" name="topping" id="rainbowSprinkles">Rainbow Sprinkles</label>
-                    
-                    <label for="goldPearls"><input type="checkbox" value="2" name="topping" id="goldPearls">Gold Pearls</label>
-                    
-                    <label for="silverPearls"><input type="checkbox" value="2" name="topping" id="silverPearls">Silver Pearls</label>
-                    
-                    <label for="daisies"><input type="checkbox" value="3" name="topping" id="daisies">Fondant Daisies</label>
-                        
-                </fieldset>
-            </div>
-            <div class="cakeImg">
-                <p class="cakeWrite">Your Message Written</p>
-            </div>
+                        <label for="vanilla"><input type="radio" value="5" name="base" id="vanilla">Vanilla</label>
+
+                        <label for="chocolate"><input type="radio" value="7" name="base"
+                                id="chocolate">Chocolate</label>
+
+                        <label for="redVelvet"><input type="radio" value="7" name="base" id="redVelvet">Red
+                            Velvet</label>
+
+                        <label for="lemon"><input type="radio" value="6" name="base" id="lemon">Lemon</label>
+
+                        <label for="birthdayCake"><input type="radio" value="7" name="base" id="birthdayCake">Birthday
+                            Cake</label>
+
+                    </fieldset>
+
+                    <fieldset class="frosting">
+                        <legend>Frosting</br>select 1</legend>
+
+                        <label for="vanillaButter"><input type="radio" value="4" name="frosting"
+                                id="vanillaButter">Vanilla Buttercream</label>
+
+                        <label for="chocGana"><input type="radio" value="6" name="frosting" id="chocGana">Chocolate
+                            Ganache</label>
+
+                        <label for="strawberryButter"><input type="radio" value="5" name="frosting"
+                                id="strawberryButter">Strawberry Buttercream</label>
+
+                        <label for="creamcheese"><input type="radio" value="6" name="frosting"
+                                id="creamcheese">Creamcheese</label>
+
+                        <label for="lemonMer"><input type="radio" value="5" name="frosting" id="lemonMer">Lemon
+                            Meringue</label>
+
+                        <label for="banana"><input type="radio" value="4" name="frosting" id="banana">Banana
+                            Cream</label>
+
+                    </fieldset>
+
+                    <fieldset class="topDeco">
+                        <legend>Toppings & Decorations</br>select up to 3</legend>
+
+                        <label for="freshBerries"><input type="checkbox" value="3" name="topping"
+                                id="freshBerries">Fresh Berries</label>
+
+                        <label for="candiedLemon"><input type="checkbox" value="2" name="topping"
+                                id="candiedLemon">Candied Lemon</label>
+
+                        <label for="darkChocShave"><input type="checkbox" value="3" name="topping"
+                                id="darkChocShave">Dark Chocolate Shavings</label>
+
+                        <label for="candiedHazel"><input type="checkbox" value="4" name="topping"
+                                id="candiedHazel">Candied Hazelnuts</label>
+
+                        <label for="rainbowSprinkles"><input type="checkbox" value="2" name="topping"
+                                id="rainbowSprinkles">Rainbow Sprinkles</label>
+
+                        <label for="goldPearls"><input type="checkbox" value="2" name="topping" id="goldPearls">Gold
+                            Pearls</label>
+
+                        <label for="silverPearls"><input type="checkbox" value="2" name="topping"
+                                id="silverPearls">Silver Pearls</label>
+
+                        <label for="daisies"><input type="checkbox" value="3" name="topping" id="daisies">Fondant
+                            Daisies</label>
+
+                    </fieldset>
+                </div>
+                <div class="cakeImg">
+                    <p class="cakeWrite">Your Message Written</p>
+                </div>
                 <label for="yourMsg">Message (This will go on cake)</label>
-                <input type="text" id="yourMsg" name="message"  placeholder="Message (optinal)" maxlength="40">
-            <div class="buttonBar">
-                <button type="submit"> Submit your creation </button>
-                <button type="reset"> Reset </button>
-            </div>
-                
+                <input type="text" id="yourMsg" name="message" placeholder="Message (optinal)" maxlength="40">
+                <div class="buttonBar">
+                    <button type="submit"> Submit your creation </button>
+                    <button type="reset"> Reset </button>
+                </div>
+
             </form>
-            
+
         </section>
         <section class="priceCalc wrapper">
             <h2>Your Creation</h2>
-            
+
             <p class="summary"></p>
             <div class="priceSummary">
                 <p>Subtotal</br>$<span class="subTotal">--</span></p>
@@ -112,11 +133,14 @@
         </section>
     </main>
     <footer class="wrapper">
-        <a href="https://junocollege.com/" target="_blank"><p>Created at Juno College</p></a>
+        <a href="https://junocollege.com/" target="_blank">
+            <p>Created at Juno College</p>
+        </a>
     </footer>
 
 
 
     <script src="./script.js"></script>
 </body>
+
 </html>

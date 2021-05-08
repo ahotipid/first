@@ -33,7 +33,9 @@ body {
 
 /* header styles */
 header{
-    height: 25vh;
+    height: 20vh;
+    display: flex;
+    align-items: center;
 }
 h1.wrapper {
     margin-top: 30px;
@@ -71,18 +73,19 @@ fieldset {
 }
 legend {
     margin : 4px 0;
-    font-size: 22px;
+    font-size: 20px;
 }
 label,input {
     margin : 6px;
+    font-size: 18px;
 }
 input[type="text"] {
     background-color: transparent;
     border: 2px solid #E15D44;
-    font: 22px 'Mulish', sans-serif;
+    font: 20px 'Mulish', sans-serif;
     color: #E15D44;
-    width: 50%;
-    padding: 20px;
+    width: 100%;
+    padding: 10px;
     margin: 10px;
 }
 div.buttonBar {
@@ -161,4 +164,40 @@ footer p {
     color: gray;
     margin: 40px auto 10px;
     text-align: center;
+}
+
+/* media query */
+@media (max-width: 990px) {
+    fieldset {       
+        width: 100%;
+    }  
+}
+@media (max-width: 800px) {
+    h1.wrapper {
+        font-size: 60px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    fieldset {       
+        width: 100%;
+    }  
+}
+@media (max-width: 540px) {
+    .wrapper {
+        width: 95%;
+    }
+    section.yourOrder div.cakeImg {
+        width : 300px;
+        height: 300px;
+    }
+    section.yourOrder p.cakeWrite {
+        font-size: 30px;
+    }
+}
+@media (max-width: 360px) {
+    section.yourOrder div.cakeImg {
+        width : 250px;
+        height: 250px;
+    }
 }
