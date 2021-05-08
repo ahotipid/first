@@ -8,4 +8,4 @@ I experiment this project, manipulating DOM elements and also listening to user'
 Tool
 HTML5 | CSS3 | jQuery
 
-view live [here] https://ahotipid.github.io/first/
+view live [here.] https://ahotipid.github.io/first/
