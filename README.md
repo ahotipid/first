@@ -1,7 +1,7 @@
-# Cake Creation
+# Cake Creations
 my first repo on GitHub
 
-Bakery custom order simulation app
+Bakeshop custom order simulation app where user cn build a cake.
 
 # Tool
 HTML5 | CSS3 | jQuery
