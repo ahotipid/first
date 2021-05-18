@@ -20,8 +20,16 @@ $(document).ready(function () {
 
 
 
-    //limit checkbox allownce maximum=3
+    //limit checkbox allownce maximum=3 and display toppings image on checked ones
     $('input[type=checkbox]').on('change', function (e) {
+        if ($('input[type=checkbox]:checked').length <= 3) {
+            if (this.checked) {
+                $(`div.cakeImg .${this.id}`).addClass('display');
+            } else {
+                $(`div.cakeImg .${this.id}`).removeClass('display');
+            }
+        }
+
         if ($('input[type=checkbox]:checked').length > 3) {
             $(this).prop('checked',false);
             alert ('Only 3 toppings & decotations allowed');
