@@ -141,9 +141,10 @@ section.yourOrder p.cakeWrite {
     font: 50px 'Sacramento', cursive;
     font-weight: bold;
     font-style: italic;
-    color: rgb(250, 107, 6);
+    color: rgb(58, 32, 6);
     text-align: center;
     margin: auto;
+    z-index: 120;
 }
 
 /* ***************************** */
@@ -158,14 +159,17 @@ div.cakeImg .toppingImg img{
     display: block;
 }
 /* berries position */
-div.cakeImg .berriesImg  {
+div.cakeImg .freshBerries  {
     width: 55%;
-    bottom: -5%;
+    bottom: -8%;
     left: 25%;
-    z-index: 20;
-    /* visibility: hidden; */
+    z-index: 40;
+    visibility: hidden;
 }
-/* hazelnuts position */
+/* hazelnuts styles */
+div.cakeImg .candiedHazel { 
+    visibility: hidden;
+}
 div.cakeImg .hazelnutImg {
     width: 30%;
     left: 15%;
@@ -185,36 +189,51 @@ div.cakeImg .hazelnut4 {
 }
 div.cakeImg .hazelnut5,
 div.cakeImg .hazelnut6 {
-    top: 50%;
+    top: 55%;
     left: -10%;
 }
 div.cakeImg .hazelnut6 {
     left: 68%;
 }
-/* candied lemons position */
+div.cakeImg .hazelnut7,
+div.cakeImg .hazelnut8 {
+    top: 75%;
+    left: 10%;
+}
+div.cakeImg .hazelnut8 {
+    left: 45%;
+}
+/* candied lemons styles */
+div.cakeImg .candiedLemon {
+    visibility: hidden;
+}
 div.cakeImg .lemonImg {
     width: 20%;
     top: 15%;
-    left: 33%;
-    z-index: 10;
+    left: 25%;
+    z-index: 20;
 }
 div.cakeImg .lemon2 {
-    left: 48%;
+    left: 55%;
 }
 div.cakeImg .lemon3,
 div.cakeImg .lemon4 {
     top: 63%;
-    left: 18%;
+    left: 15%;
 }
 div.cakeImg .lemon4 {
-    left: 60%;
+    left: 63%;
 }
-/* choccolate shavings style */
+/* choccolate shavings styles */
+div.cakeImg .darkChocShave {
+    visibility: hidden;
+}
 div.cakeImg .chocolateShaving {
     width: 33%;
     transform: rotate(-48deg);
     top: 3%;
     left: -7%;
+    z-index: 60;
 }
 div.cakeImg .shaving2 {
     transform: rotate(-20deg);
@@ -271,7 +290,41 @@ div.cakeImg .shaving12 {
     top: 28%;
     left: -15%;
 }
+/* gold sprinkles styles */
+div.cakeImg .goldPearls {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 10;
+    visibility: hidden;
+}
+/* rainbow sprinkles styles */
+div.cakeImg .rainbowSprinkles {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 10;
+    visibility: hidden;
+}
+/* fondant flowers styles */
+div.cakeImg .fondantFlowers {
+    visibility: hidden;
+}
+div.cakeImg .flowers {
+    width: 20%;
+    top: 10%;
+    left: 33%;
+    z-index: 70;
+}
+div.cakeImg .flower2 {
+    left: 48%;
+    transform: rotateY(180deg);
+}
 
+/* display visible depend on checkbox checked */
+div.cakeImg .display {
+    visibility: visible;
+}
 
 /* ******************************** */
 /* summary section styles */
